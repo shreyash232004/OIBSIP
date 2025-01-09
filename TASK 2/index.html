@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Portfolio</title>
+    <style>
+        /* General Styles */
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background: linear-gradient(90deg, #4CAF50, #2E7D32);
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            margin: 0;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            margin-top: 0.5rem;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            background: #333;
+            padding: 0.75rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1rem;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1rem;
+        }
+
+        .about {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .about img {
+            border-radius: 50%;
+            width: 200px;
+            height: 200px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .about-text {
+            flex: 1;
+        }
+
+        .projects {
+            margin-bottom: 2rem;
+        }
+
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .project {
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 1rem;
+            background: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .project:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .project img {
+            max-width: 100%;
+            border-radius: 5px;
+        }
+
+        .project h3 {
+            margin: 0.5rem 0;
+        }
+
+        .contact {
+            background: #4CAF50;
+            color: white;
+            padding: 2rem;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        .contact a {
+            color: #FFD700;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .contact a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Shreyash's Portfolio</h1>
+        <p>Web Developer | Designer | Creator</p>
+    </header>
+
+    <nav>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="container">
+        <section id="about" class="about">
+            <img src="man.png" alt="Your Profile Picture">
+            <div class="about-text">
+                <h2>About Me</h2>
+                <p>Hello! I’m Shreyash, a passionate web developer specializing in creating dynamic and user-friendly
+                    websites. With expertise in HTML, CSS, JavaScript, and modern frameworks, I bring innovative ideas
+                    to life through code.</p>
+            </div>
+        </section>
+
+        <section id="projects" class="projects">
+            <h2>Projects</h2>
+            <div class="projects-grid">
+                <div class="project">
+                    <img src="html.png" alt="Project 1">
+                    <h3>Project 1</h3>
+                    <p>HTML projects focus on structuring web content. Examples include personal portfolios, landing
+                        pages, blog templates, restaurant menus, photo galleries, to-do lists, and online resumes. These
+                        projects help build foundational web development skills, often integrating CSS and JavaScript
+                        for added functionality.</p>
+                </div>
+                <div class="project">
+                    <img src="instagram.png" alt="Project 2">
+                    <h3>Project 2</h3>
+                    <p>Creating an Instagram-like platform using HTML involves designing user profiles, photo feeds, and
+                        interaction buttons like "like" and "comment." It includes a navigation bar for home, search,
+                        and profile sections, and a comment section for each post. While HTML structures the layout, CSS
+                        handles styling, and JavaScript adds interactivity, such as dynamic content and user
+                        interactions.</p>
+                </div>
+                <div class="project">
+                    <img src="twitter.png" alt="Project 3">
+                    <h3>Project 3</h3>
+                    <p>Creating a Twitter-like platform using HTML involves structuring key elements such as user
+                        profiles, tweet feeds, and interaction buttons. The profile page would display the user's image,
+                        bio, and links to their tweets. A tweet feed would showcase posts, with each tweet containing a
+                        message, a like button, and a reply option. A navigation bar would provide easy access to the
+                        home feed, search, notifications, and the user's profile. HTML would handle the structure, while
+                        CSS would style the page, and JavaScript could add interactivity like tweet posting, liking, and
+                        replying. This project focuses on building a basic version of a social media platform layout.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <h2>Contact</h2>
+            <p>Feel free to reach out via email: <a href="mailto:shreyash@example.com">shreyash@example.com</a></p>
+            <p>Connect with me on LinkedIn: <a href="https://linkedin.com/in/yourprofile" target="_blank">shreyash 
+                linkedin.com</a></p>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Shreyash. All Rights Reserved.</p>
+    </footer>
+</body>
+
+</html>
